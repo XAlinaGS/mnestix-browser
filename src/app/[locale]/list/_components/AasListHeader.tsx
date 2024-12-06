@@ -7,9 +7,8 @@ export default async function AasListHeader() {
     return (
         <>
             <Typography variant="h2" textAlign="left" marginBottom={2}>
-                {t('header')}dsafdsffdas
+                {t('header')}
             </Typography>
-            <Typography variant="h5">{t('subHeader')}</Typography>
         </>
     );
 }

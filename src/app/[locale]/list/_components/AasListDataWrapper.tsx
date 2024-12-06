@@ -125,11 +125,11 @@ export default function AasListDataWrapper() {
                         comparisonFeatureFlag={env.COMPARISON_FEATURE_FLAG}
                     ></AasList>
                     <Box display="flex" justifyContent="flex-end" alignItems="center" gap={4} marginTop={2}>
-                        <IconButton onClick={handleGoBack} disabled={currentPage === 0}>
+                        <IconButton onClick={handleGoBack} disabled={currentPage === 0} data-testid="list-back-button">
                             <ArrowBackIosNewIcon />
                         </IconButton>
                         <Typography>{t('page') + ' ' + (currentPage + 1)}</Typography>
-                        <IconButton onClick={handleNextPage} disabled={!currentCursor}>
+                        <IconButton onClick={handleNextPage} disabled={!currentCursor} data-testid="list-next-button">
                             <ArrowForwardIosIcon />
                         </IconButton>
                     </Box>
